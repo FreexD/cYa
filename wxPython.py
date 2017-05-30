@@ -83,8 +83,8 @@ class View(wx.Panel):
         self._hasSmile = False
         self._shouldDrawSmile = False
         self._smileCounter = 0
-        self._smileBitmap = wx.Bitmap("smile.png")
-        self._noSmileBitmap = wx.Bitmap("no_smile.png")
+        self._smileBitmap = wx.Image("smile.png", wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+        self._noSmileBitmap = wx.Image("no_smile.png", wx.BITMAP_TYPE_ANY).ConvertToBitmap()
         super(View, self).__init__(parent)
         self.SetBackgroundStyle(wx.BG_STYLE_CUSTOM)
         self.Bind(wx.EVT_SIZE, self.on_size)
@@ -114,8 +114,10 @@ class View(wx.Panel):
         w, h = self.GetClientSize()
         dc = wx.AutoBufferedPaintDC(self)
         dc.Clear()
-        dc.SetPen(wx.Pen(wx.BLACK, 2))
+        dc.SetPen(wx.Pen(wx.BLACK, 0))
         dc.SetBrush(wx.Brush(wx.Colour(255,255,255)))
+        dc.DrawRectangle(0,0,w,h)
+        dc.SetPen(wx.Pen(wx.BLACK, 2))
         dc.DrawCircle(w / 4, h / 4, 100)
         dc.DrawCircle( 3* w / 4, h / 4, 100)
         dc.SetBrush(wx.Brush(wx.Colour(179, 224, 255)))
