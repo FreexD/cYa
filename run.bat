@@ -1,0 +1,2 @@
+python wxPython.py haarcascade_frontalface_default.xml
+@pause
