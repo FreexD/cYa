@@ -33,9 +33,10 @@ python cYa.py haarcascade_frontalface_default.xml haarcascade_smile.xml
 
 cYa uses wxPython for displaying GUI. On wxApp initialization it fires up a new thread used for face and smile detection using openCv together with haarcascade_frontalface_default.xml and haarcascade_smile.xml. On face found, the face detection thread posts and event to GUI thread with face position and information if it is smiling. GUI receives the event and redraws it's Panel on whitch there are eyes and mouth, so that the eyes are looking in the position you are in at the moment, and face smiles if you're smiling.
 
-### Example
+### Examples
 
 ![](https://github.com/FreexD/cYa/blob/master/examples/example.gif)
+![](https://github.com/FreexD/cYa/blob/master/examples/example_jim_carrey.gif)
 
 
 
