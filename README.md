@@ -24,7 +24,7 @@ pip install opencv_python-2.4.13.2-cp27-cp27m-win_amd64.whl
 
 ### Running the app
 
-To run cYa either double click run.bat file, or type the command by yourself.
+To run cYa either double click run.bat file, or type the command by yourself from src catalogue.
 ```bat 
-python wxPython.py haarcascade_frontalface_default.xml haarcascade_smile.xml
+python cYa.py haarcascade_frontalface_default.xml haarcascade_smile.xml
 ```

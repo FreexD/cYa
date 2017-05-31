@@ -104,11 +104,9 @@ class View(wx.Panel):
             self._smileCounter = 0
         elif (self._smileCounter < 4):
             self._smileCounter += 1
-        print self._smileCounter
         self._hasSmile = hasSmile
         if (self._hasSmile != self._shouldDrawSmile) and (self._smileCounter == 4):
             self._shouldDrawSmile = self._hasSmile
-        print "Found face! "+str(event.GetValue())
         self.Refresh()
     def on_paint(self, event):
         w, h = self.GetClientSize()
@@ -150,7 +148,7 @@ class View(wx.Panel):
 class Frame(wx.Frame):
     def __init__(self):
         super(Frame, self).__init__(None)
-        self.SetTitle('I can see you!')
+        self.SetTitle('cYa :)')
         self.SetClientSize((700, 500))
         self.Center()
         self.view = View(self)
