@@ -1,2 +1,2 @@
-python wxPython.py haarcascade_frontalface_default.xml
+python wxPython.py haarcascade_frontalface_default.xml haarcascade_smile.xml
 @pause
