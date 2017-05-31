@@ -35,7 +35,12 @@ cYa uses wxPython for displaying GUI. On wxApp initialization it fires up a new 
 
 ### Examples
 
+Smile recognition and moving face detection example
+
 ![](https://github.com/FreexD/cYa/blob/master/examples/example.gif)
+
+Jim Carrey gagging example 
+
 ![](https://github.com/FreexD/cYa/blob/master/examples/example_jim_carrey.gif)
 
 
