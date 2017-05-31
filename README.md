@@ -35,7 +35,7 @@ cYa uses wxPython for displaying GUI. On wxApp initialization it fires up a new 
 
 ### Example
 
-![](http://g.recordit.co/NHQKzGw0m2.gif)
+![](https://github.com/FreexD/cYa/blob/master/examples/example.gif)
 
 
 
